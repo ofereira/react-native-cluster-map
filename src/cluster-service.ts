@@ -116,7 +116,7 @@ export class ClusterService {
   };
 
   // TODO: Add unit test
-  private getClusterMarkers = (
+  public getClusterMarkers = (
     clusterId: number
   ): Array<SuperCluster.PointFeature<GeoJsonProperties>> => {
     const clusterChildren = this.superCluster.getChildren(clusterId);
