@@ -158,6 +158,10 @@ export class ClusterMap extends React.PureComponent<
       () => this.props.onMapReady && this.props.onMapReady()
     );
   };
+
+  private getClusterMarkers = (clusterId) => {
+    return clusterService.getClusterMarkers(clusterId);
+  }
 }
 
 const styles = StyleSheet.create({
